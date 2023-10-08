@@ -1,10 +1,10 @@
 {
     "name": "Hidden channels",
-    "description": "View the name and description of channels you can't access",
+    "description": "Veja o nome e a descrição dos canais que você não consegue acessar.",
     "authors": [
         {
-            "name": "cloudburst",
-            "id": "892128204150685769"
+            "name": "ylegend",
+            "id": "498158678457843722"
         }
     ],
     "main": "src/index.ts",
