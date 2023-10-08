@@ -53,15 +53,15 @@ function FancyDate({date}) {
 
 export default function HiddenChannel({channel}) {
     return <View style={MessageStyles.container}>
-        <Text style={MessageStyles.title}>Esse canal está privado.</Text>
+        <Text style={MessageStyles.title}>This channel is hidden.</Text>
         <Text style={MessageStyles.text}>
-            Tópicp: {channel.topic || "No topic."}
+            Topic: {channel.topic || "No topic."}
             {"\n\n"}
-            Data de criação: <FancyDate date={new Date(snowflakeUtils.extractTimestamp(channel.id))} />
+            Creation date: <FancyDate date={new Date(snowflakeUtils.extractTimestamp(channel.id))} />
             {"\n\n"}
-            Última mensagem: {channel.lastMessageId ? <FancyDate date={new Date(snowflakeUtils.extractTimestamp(channel.lastMessageId))} /> : "No messages."}
+            Last message: {channel.lastMessageId ? <FancyDate date={new Date(snowflakeUtils.extractTimestamp(channel.lastMessageId))} /> : "No messages."}
             {"\n\n"}
-            Último fixado: {channel.lastPinTimestamp ? <FancyDate date={new Date(channel.lastPinTimestamp)} /> : "No pins."}
+            Last pin: {channel.lastPinTimestamp ? <FancyDate date={new Date(channel.lastPinTimestamp)} /> : "No pins."}
         </Text>
     </View>
 }
