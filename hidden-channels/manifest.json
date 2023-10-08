@@ -1,0 +1,14 @@
+{
+    "name": "Hidden channels",
+    "description": "Veja o nome e a descrição dos canais que você não consegue acessar.",
+    "authors": [
+        {
+            "name": "Legend",
+            "id": "498158678457843722"
+        }
+    ],
+    "main": "src/index.ts",
+    "vendetta": {
+        "icon": "ic_lock"
+    }
+}
